@@ -1,92 +1,57 @@
-# HARIS AI - GESTURE CONTROL ENGINE
+# 🔮 MJ AI - NEXT-GEN GESTURE CONTROL HOLOGRAM ENGINE
 
-Advanced browser-based hologram viewer with gesture recognition, GLB model loading, and Iron Man-style interactive controls using hand gestures and webcam.
+[![Three.js](https://img.shields.io/badge/Three.js-r156-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-Hands-0078d4?style=for-the-badge)](https://google.github.io/mediapipe/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/)
 
-## 🚀 Features
+An advanced, browser-based 3D Hologram Viewer featuring high-fidelity hand gesture recognition, dynamic GLTF/GLB assembly breaking, and Iron Man-style spatial interaction driven by your webcam.
 
-- **Gesture Recognition**: Fist, open hand, victory sign, three-finger pose, and pinch gestures
-- **GLB/GLTF Support**: Load any 3D model file
-- **3D Depth Effects**: Enable depth-based animations
-- **Holographic Mode**: Apply neon glow effects with color customization
-- **Real-time Hand Tracking**: MediaPipe Hands for accurate gesture detection
-- **Opacity Control**: Adjust transparency with slider
-- **Color Picker**: Blue, Green, Red, Purple, or Multi-color holographic modes
-- **Live Webcam Preview**: See your hand tracking in real-time
+---
 
-## 🎮 Gesture Controls
+## 🚀 Key Upgrades & Features
 
-| Gesture | Action | Description |
-|---------|--------|-------------|
-| ✊ Fist Hold | Drag & Reposition | Move the model around the 3D space |
-| 🖐 Full Open Hand | Manual Rotate | Rotate model by hand position |
-| ✌️ Victory Sign (2 fingers) | Horizontal Spin | Spin the model left/right |
-| 🤟 Three Fingers Up | Vertical Spin | Spin the model up/down |
-| 👌 Pinch (3 fingers closed) | Precise Zoom | Scale the model in/out |
+### ⚡ Binary Part Isolation (Inspection Mode)
+- **True Culling/Visibility Lock:** Engaging inspection mode instantly triggers a complete rendering-level visibility shutoff (`visible = false`) for all non-focused components. No ghost artifacts, no shadow remnants—just absolute 100% solo part isolation.
+- **Auto-Fit View Scaling:** Isolated parts compute bounding box vectors in real-time to perfectly fit and center-scale within the viewport frame seamlessly.
 
-## 🛠️ Installation & Usage
+### 🌐 Stark Hologram Overwrite Engine
+- **Cached Vector Flusher:** Dynamically replaces complex embedded textures with high-tech glowing wireframe materials instantly via pipeline memory flushes (`needsUpdate = true`).
+- **Dynamic Hex Color Palette Sync:** Seamlessly switch between solid **Neon Red, Cyber Green, Laser Blue, Deep Purple**, or custom spectrum hex codes without rendering freeze or shading interference.
+- **Live Opacity Shifting:** Direct state linking between UI transparency sliders and WebGL buffers for instant fade and glowing density control.
 
-### Run from Python
+### 🤖 Core Capabilities
+- **Dual-Hand Assembly Explode:** Pull hands apart to organically dissemble the model pieces across 3D space based on vector physics.
+- **Magnetic Snapback Re-Assembly:** A dual-hand custom gesture command to instantly attract all scattered parts back to their original local transformation vectors.
+- **Model Normalization Engine:** Automatically re-centers and scales any uploaded `.glb` files to prevent out-of-bounds rendering.
 
-1. Open terminal and navigate to the project folder:
-   ```powershell
-   cd "c:\Users\silen\Desktop\HARIS AI - GESTURE CONTROL ENGINE_files"
-   python server.py
-   ```
-   
-   Or simply double-click `run.bat`
+---
 
-2. Your browser will open automatically at `http://127.0.0.1:8000/index.html`
-3. Click **⚙️ SHOW CONTROLS** to expand the menu
-4. Allow webcam access when prompted
-5. Load a GLB model using **🎲 Load 3D Model**
-6. Use your hand gestures to control the hologram!
+## 🎮 Gesture Matrix Controls
 
-### Manual Browser Launch
+| Mode | Gesture Pose | System Action | Engineering Description |
+| :--- | :--- | :--- | :--- |
+| **Global/Isolated** | 🖐️ Full Open Hand | **Orbit Rotation** | Rotates the model/active component smoothly based on hand's center coordinates. |
+| **Global/Isolated** | ✌️ Two Fingers Move | **Spatial Translation** | Drags and repositions the target mesh fluidly along X and Y axes. |
+| **Global/Isolated** | 👌 Pinch Close | **Zoom Out** | Linearly shrinks and scales down the 3D entity. |
+| **Global/Isolated** | ☝️ Pinch Open / Extend | **Zoom In** | Linearly expands and scales up the 3D entity. |
+| **Assembly breaking** | 👐 Dual Hands Apart | **Explode Parts** | Triggers distance-based multi-part structural separation. |
+| **Assembly breaking** | 👍 Double Thumbs Up | **Magnetic Assembly** | Instantly snaps all broken components back to 100% factory positions. |
+| **Inspection Mode** | 👍 Single Thumbs Up | **Cycle Isolated Mesh** | Toggles forward through each individual culled part in full-screen view. |
 
-If `server.py` doesn't open the browser:
-- Open `http://127.0.0.1:8000` manually in your browser
-- Or open `index.html` directly (limited file access support)
+---
 
-## 🎨 UI Controls
+## 🛠️ UI Controls Panel
 
-- **Load Images**: Upload image files for visual effects
-- **Enable 3D Depth**: Add depth-based rotation animations
-- **Holographic Mode**: Toggle neon glow and color effects
-- **GHOST OPACITY**: Adjust model transparency (0-100%)
-- **Color Palette**: Choose holographic color: Blue, Green, Red, Purple, or Multi
+- **🎲 Load 3D Model:** Safely uploads any industrial or custom `.glb` / `.gltf` asset directly into the runtime group.
+- **🌐 Holographic Mode:** Toggles between heavy realistic physical textures and high-contrast cyber wireframe modes.
+- **🎨 Color Picker:** Updates the hologram color real-time across **Blue, Green, Red, Purple**, and custom values.
+- **🎚️ Ghost Opacity Slider:** Real-time alpha blend adjustment ranging from `0.0` (invisible wireframe) to `1.0` (solid glow).
 
-## ⚙️ System Requirements
+---
 
-- Modern browser (Chrome, Edge, Firefox with WebGL support)
-- Webcam with permission to access
-- Good lighting for better hand detection
+## 📦 Installation & Local Architecture
 
-## 📁 Project Files
-
-- `index.html` - Advanced UI with neon styling
-- `app.module.js` - Gesture detection, 3D rendering, model loading
-- `server.py` - Local Python HTTP server for serving the app
-- `run.bat` - Quick launch shortcut (Windows)
-- `style.css` - Legacy styles (can be removed)
-- `app.js` - Legacy JavaScript (can be removed)
-
-## 🔮 Advanced Features
-
-- **Real-time Hand Landmark Detection**: 21-point hand skeleton tracking
-- **Multiple Gesture Recognition**: Detects up to 5 different hand poses
-- **Smooth Animation**: Interpolated 3D transforms for fluid motion
-- **Lighting & Fog**: Three.js scene with ambient, directional, and point lights
-- **Model Normalization**: Automatically scales any GLB model to fit viewport
-
-## 🎯 Tips
-
-- Use well-lit environments for best hand detection accuracy
-- Keep your hand clearly visible to the webcam
-- The gesture detection works best at 30-60cm distance from camera
-- Reload page if gestures become unresponsive
-
-## 📝 Notes
-
-- No server installation needed beyond Python (usually pre-installed on Windows)
-- All processing happens in the browser (client-side only)
-- WebGL is required for 3D rendering
+### Fast Launch (Windows)
+Simply double-click the setup file in your root folder:
+```powershell
+run.bat
